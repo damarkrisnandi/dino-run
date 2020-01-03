@@ -2537,6 +2537,9 @@ MonoBehaviour:
   rb: {fileID: 1061660624}
   isGrounded: 0
   startingPoint: {x: 0, y: 0, z: 0}
+  isAccel: 0
+  constantSpeed: 10
+  smoothingFactor: 1
 --- !u!75 &1061660626
 ConstantForce:
   m_ObjectHideFlags: 0
