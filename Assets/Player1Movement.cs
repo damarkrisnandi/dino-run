@@ -25,22 +25,13 @@ public class Player1Movement : MonoBehaviour
         
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        rb.AddForce(10, 0 , 0);
-
-        if (Input.GetKey("w")) {
-            rb.AddForce(0, 0, 20);
-        }
-
-        if (Input.GetKey("s")) {
-            rb.AddForce(0, 0, -20);
-        }
+        // rb.AddForce(new Vector3(5, 0 , 0));
 
         if (Input.GetKey("space") & isGrounded == true) {
-            rb.AddForce(new Vector3(0, 5, 0), ForceMode.Impulse);
+            rb.AddForce(new Vector3(-1, 5, 0), ForceMode.Impulse);
             isGrounded = false;
         }
-
     }
 }
