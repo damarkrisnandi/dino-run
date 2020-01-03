@@ -8,16 +8,10 @@ public class Player1Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("d")) {
-            rb.AddForce(20, 0 , 0);
-        }
+        rb.AddForce(1000 * Time.deltaTime, 0 , 0);
 
         if (Input.GetKey("w")) {
             rb.AddForce(0, 0, 20);
-        }
-
-        if (Input.GetKey("a")) {
-            rb.AddForce(-20, 0, 0);
         }
 
         if (Input.GetKey("s")) {
@@ -25,7 +19,7 @@ public class Player1Movement : MonoBehaviour
         }
 
         if (Input.GetKey("space")) {
-            rb.AddForce(0, 25, 0);
+            rb.AddForce(0, 90 - 10 * Time.deltaTime, 0);
         }
     }
 }
