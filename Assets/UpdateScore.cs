@@ -18,11 +18,11 @@ public class UpdateScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score += 0.1;
-        text.text = Math.Floor(score).ToString();
+        // score += 0.1;
+        // text.text = Math.Floor(score).ToString();
 
-        if (transform.position == sp) {
-            score = 0;
-        }
+        // if (transform.position == sp) {
+        //     score = 0;
+        // }
     }
 }
