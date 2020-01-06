@@ -147,7 +147,7 @@ public class Player1Movement : MonoBehaviour
 
     void UpdateScore() {
         if (isPlayOn == true) {
-            score += 0.1f;
+            score = (transform.position.x - startingPoint.x);
             text.text = Math.Floor(score).ToString();
         }
 
